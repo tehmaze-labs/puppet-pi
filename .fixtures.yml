@@ -3,4 +3,5 @@
 ---
 fixtures:
   forge_modules:
-    stdlib: "camptocamp/augeas"
+    augeas: camptocamp/augeas
+    reboot: puppetlabs/reboot
