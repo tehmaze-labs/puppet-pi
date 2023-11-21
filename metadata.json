@@ -39,5 +39,18 @@
       "name": "puppet",
       "version_requirement": ">= 7.0.0 < 9.0.0"
     }
+  ],
+  "tags": [
+    "pi",
+    "rpi",
+    "raspberry",
+    "raspberry pi",
+    "banana pi",
+    "orange pi",
+    "/boot/config.txt",
+    "config.txt",
+    "/boot/cmdline.txt",
+    "cmdline.txt",
+    "raspbian"
   ]
 }
