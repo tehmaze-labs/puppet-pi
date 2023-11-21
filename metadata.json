@@ -9,6 +9,14 @@
     {
       "name": "camptocamp/augeas",
       "version_requirement": ">= 1.0.0 < 2.0.0"
+    },
+    {
+      "name": "puppetlabs/reboot",
+      "version_requirement": ">= 5.0.0 < 6.0.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">= 9.0.0 < 10.0.0"
     }
   ],
   "operatingsystem_support": [
@@ -31,5 +39,18 @@
       "name": "puppet",
       "version_requirement": ">= 7.0.0 < 9.0.0"
     }
+  ],
+  "tags": [
+    "pi",
+    "rpi",
+    "raspberry",
+    "raspberry pi",
+    "banana pi",
+    "orange pi",
+    "/boot/config.txt",
+    "config.txt",
+    "/boot/cmdline.txt",
+    "cmdline.txt",
+    "raspbian"
   ]
 }

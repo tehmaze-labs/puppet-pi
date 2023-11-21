@@ -3,4 +3,7 @@
 ---
 fixtures:
   forge_modules:
-    stdlib: "camptocamp/augeas"
+    stdlib: puppetlabs/stdlib  # dep of puppetlabs/concat
+    augeas: camptocamp/augeas
+    reboot: puppetlabs/reboot
+    concat: puppetlabs/concat
