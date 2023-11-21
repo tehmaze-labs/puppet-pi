@@ -27,4 +27,8 @@ define pi::cmdline::parameter (
     ],
     require => Augeas::Lens['boot_cmdline'],
   }
+
+  if Class['pi::cmdline']['reboot'] {
+    Augeas[$name] ~> Reboot['/boot/cmdline.txt']
+  }
 }
