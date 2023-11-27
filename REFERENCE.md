@@ -58,7 +58,7 @@ The following parameters are available in the `pi::config` class:
 
 Data type: `Hash[String[1], Hash]`
 
-A hash of profile::pi::config::fragments to be concatenated into
+A hash of pi::config::fragments to be concatenated into
 `/boot/config.txt`.
 
 Default value: `{}`

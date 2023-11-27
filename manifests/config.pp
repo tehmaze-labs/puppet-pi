@@ -2,7 +2,7 @@
 #   Manages `/boot/config.txt`
 #
 # @param fragments
-#  A hash of profile::pi::config::fragments to be concatenated into
+#  A hash of pi::config::fragments to be concatenated into
 #  `/boot/config.txt`.
 #
 # @param reboot
