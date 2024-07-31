@@ -4,5 +4,3 @@
 
 inherit_gem:
   voxpupuli-test: rubocop.yml
-RSpec/BeforeAfterAll:
-  Enabled: false
