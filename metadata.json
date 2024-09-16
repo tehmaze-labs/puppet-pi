@@ -1,6 +1,6 @@
 {
   "name": "lsst-pi",
-  "version": "1.0.0",
+  "version": "1.0.1-rc0",
   "author": "AURA/LSST/Rubin Observatory",
   "summary": "Fruit Pi module",
   "license": "AGPL-3.0",
