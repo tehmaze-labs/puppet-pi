@@ -7,8 +7,8 @@
   "source": "https://github.com/lsst-it/puppet-pi",
   "dependencies": [
     {
-      "name": "camptocamp/augeas",
-      "version_requirement": ">= 1.0.0 < 2.0.0"
+      "name": "puppet/augeas",
+      "version_requirement": ">= 2.0.0 < 3.0.0"
     },
     {
       "name": "puppetlabs/reboot",
