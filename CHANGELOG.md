@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v1.0.0](https://github.com/lsst-it/puppet-pi/tree/v1.0.0) (2024-09-16)
+
+[Full Changelog](https://github.com/lsst-it/puppet-pi/compare/v0.1.0...v1.0.0)
+
+**Breaking changes:**
+
+-  switch from camptocamp/augeas to puppet/augeas [\#7](https://github.com/lsst-it/puppet-pi/pull/7) ([jhoblitt](https://github.com/jhoblitt))
+
 ## [v0.1.0](https://github.com/lsst-it/puppet-pi/tree/v0.1.0) (2023-11-21)
 
 [Full Changelog](https://github.com/lsst-it/puppet-pi/compare/91b1c47a61d6cd04cdc3fe18a69cde0c7566aa61...v0.1.0)
