@@ -12,7 +12,9 @@ class pi::config (
   Hash[String[1], Hash] $fragments = {},
   Boolean $reboot = true,
 ) {
-  $path = "${::pi::params::path}/config.txt"
+  include pi::params
+
+  $path = "${pi::params::path}/config.txt"
 
   concat { $path:
     ensure => present,

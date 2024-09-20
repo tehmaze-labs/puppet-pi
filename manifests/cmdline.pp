@@ -11,6 +11,8 @@ class pi::cmdline (
   Hash[String[1], Hash] $parameters = {},
   Boolean $reboot = true,
 ) {
+  include pi::params
+
   $path = "${pi::params::path}/cmdline.txt"
 
   augeas::lens { 'boot_cmdline':
