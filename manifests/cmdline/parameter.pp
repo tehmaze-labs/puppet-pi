@@ -19,9 +19,9 @@ define pi::cmdline::parameter (
   }
 
   augeas { $name:
-    context => '/files/boot/cmdline.txt/1',
+    context => "/files${pi::cmdline::path}/1",
     lens    => 'Boot_Cmdline.lns',
-    incl    => '/boot/cmdline.txt',
+    incl    => $pi::cmdline::path,
     changes => [
       "set parameter[. = '${_real_parameter}'] '${_real_parameter}'",
     ],
@@ -29,6 +29,6 @@ define pi::cmdline::parameter (
   }
 
   if Class['pi::cmdline']['reboot'] {
-    Augeas[$name] ~> Reboot['/boot/cmdline.txt']
+    Augeas[$name] ~> Reboot[$pi::cmdline::path]
   }
 }

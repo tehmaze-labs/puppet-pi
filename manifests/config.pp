@@ -12,7 +12,9 @@ class pi::config (
   Hash[String[1], Hash] $fragments = {},
   Boolean $reboot = true,
 ) {
-  concat { '/boot/config.txt':
+  $path = "${::pi::params::path}/config.txt"
+
+  concat { $path:
     ensure => present,
     mode   => '0755',  # this is the default, +x seems odd
   }
@@ -24,9 +26,9 @@ class pi::config (
   }
 
   if ($reboot) {
-    reboot { '/boot/config.txt':
+    reboot { $path:
       apply   => finished,
-      message => 'Rebooting to apply /boot/config.txt changes',
+      message => "Rebooting to apply ${path} changes",
       when    => refreshed,
     }
   }

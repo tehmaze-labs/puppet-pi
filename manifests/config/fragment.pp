@@ -19,12 +19,12 @@ define pi::config::fragment (
   }
 
   concat::fragment { $name:
-    target  => '/boot/config.txt',
+    target  => $pi::config::path,
     content => $_real_content,
     order   => $order,
   }
 
   if Class['pi::config']['reboot'] {
-    Concat::Fragment[$name] ~> Reboot['/boot/config.txt']
+    Concat::Fragment[$name] ~> Reboot[$pi::config::path]
   }
 }

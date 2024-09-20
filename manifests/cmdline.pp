@@ -11,6 +11,8 @@ class pi::cmdline (
   Hash[String[1], Hash] $parameters = {},
   Boolean $reboot = true,
 ) {
+  $path = "${pi::params::path}/cmdline.txt"
+
   augeas::lens { 'boot_cmdline':
     lens_content => file("${module_name}/boot_cmdline.aug"),
   }
@@ -22,9 +24,9 @@ class pi::cmdline (
   }
 
   if ($reboot) {
-    reboot { '/boot/cmdline.txt':
+    reboot { $path`:
       apply   => finished,
-      message => 'Rebooting to apply /boot/config.txt changes',
+      message => "Rebooting to apply ${path} changes",
       when    => refreshed,
     }
   }
